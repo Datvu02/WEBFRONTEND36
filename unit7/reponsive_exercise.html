@@ -279,6 +279,7 @@
         #ip786-991{
         	display: none;
         }
+
         @media screen and (max-width: 992px){
         	.addmenu ul > li:not(:last-child){
         		display: none;	
@@ -369,23 +370,34 @@
         	#last{
         		width: 15%;
         	}
-        	 #titot{
-        		margin-bottom: 170px; 
-        	}
-        	.title #titotp{
-        		margin-bottom: 170px;
-        		border-radius:5px	;  
-        	}
         }
-        @media screen and (max-width: 767px){
-        	
+        @media screen and (max-width: 768px){
+        	.parentCenter{
+        		display: none;
+        		clear: left;
+        	}
+        	#firttitle{
+        		width: 15%;
+        	}
+        	.foggy{
+        		height: 1667px;
+
+        	}
+
+        	.parent{
+        		width: 77%;
+    			height: 409px;
+        	}
+        	.foggysmp{
+        		width: 100%;
+        	}
         }
 
 	</style>
 </head>
 <body>
 	<div class="menu" style="width: 100%">
-		<div style="width: 20%;"><p><font size="5" >Zent's Blog</font></p></div>
+		<div id="firttitle" style="width: 20%;"><p><font size="5" >Zent's Blog</font></p></div>
 		<div class="addmenu" style="width: 80%;">
 			<button class="btn-menu"><i class="fas fa-bars"></i></button>
 			<ul style="float: right;">
@@ -403,7 +415,7 @@
 	<center>
 		<br style="width: 80%;color: black">
 		<div class="foggy" style="height: 490px;">
-			<div style="width: 35%; float: right;" >	
+			<div style="width: 35%; float: right;"  class="foggysmp">	
 				<div class="parent"  style="margin-top: 20px">
 			        <img src="img5/anh_3.webp" alt="">
 			        <div class="opacity">
@@ -444,7 +456,7 @@
 			        </div>
 			    </div>	
 			</div>
-			<div style="width: 38%;" >	
+			<div  style="width: 38%;" class="foggysmp">	
 				<div class="parent">
 			        <img src="img5/anh_1.webp" alt="">
 			        <div class="opacity">
@@ -678,7 +690,7 @@
 			        <div class="opacityBottom">
 			            
 			        </div>
-			        <div  class="title" style="margin-bottom: 237px;">
+			        <div  class="title" style="margin-bottom: 237px;top: 0;">
 				        <p  style="background-color: #33CC00" style="color: white;"   class="attention"	>NATURE</p>
 				    </div>
 			        <div class="title">
@@ -724,7 +736,7 @@
 			        <div  class="opacityrt" >
 			            
 			        </div>
-			        <div  class="title" style="margin-bottom: 480px">
+			        <div  class="title" style="margin-bottom: 480px;	top: 0">
 				        <p style="background-color: red"style="color: white;border-radius: 5px"  class="attention" >TRAVER</p>
 				    </div>
 				    <div class="title">		        	
