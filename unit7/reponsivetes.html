@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tes_responsive</title>
+	<style>
+		*{
+			margin: 0;
+			position: 0;
+			box-sizing: border-box;
+		}
+		
+
+		#header{
+			width: 100%;
+			height: 50px;
+			background-color: yellow;
+		}
+		#footer{
+			width: 100%;
+			height: 50px;
+			background-color: yellow;
+		}
+		#main{
+			width: 100%;
+			display: flex;
+		}
+		#left{
+			width: 20%;
+			background-color: red;
+			height: 300px;
+		}
+		#center{
+			width: 60%;
+			background-color:#ccc;
+			height: 300px;
+		}
+		#right{
+			width: 20%;
+			background-color: green;
+			height: 300px;
+		}
+		@media  screen and (min-width: 768px) and (max-width: 992px){
+			#main{
+				flex-wrap: wrap;
+			}
+			#center{
+				width: 80%;
+			}
+
+			#right{
+				width: 100%;
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		Header
+	</div>
+	<div id="main">
+		<div id="left">Left</div>
+		<div id="center">center</div>
+		<div id="right">right</div>
+	</div>
+	<div id="footer">
+		footer
+	</div>
+</body>
+</html>
