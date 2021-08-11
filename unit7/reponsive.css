@@ -736,6 +736,20 @@ input{
 		display: block;
 	}
 	.bottom-top-center ul{
-		
+		float: left;
+    	width: 50%;
+	}
+	.bottom-top-center{
+		padding-left: 0;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.bottom-top-left{
+		width: 100%;
+
+	}
+	.bottom .center{
+		margin-top: 190px;
+
 	}
 }
