@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding:0;
+	box-sizing: border-box;
 }
 .menu{
 	width: 100%;
@@ -42,6 +43,12 @@
 	line-height: 40px;
 	padding-left:10px;
 	padding-right:20px; 
+}
+a{
+	font-size:20px;
+	text-decoration: none;
+	color: black;
+	text-align: justify;
 }
 
 /**/
@@ -305,24 +312,92 @@
 
 .foggy4{
 	width: 100%;
+	height: 600px;
 	float: left;
 	background: #ccc;
 	margin-top:150px;
+	padding: 10px;
+    padding-top: 50px;
+	margin-bottom: 100px;
+
 }
 .foggy4-left{
 	width: 54%;
+	height: 97%;
 	float: left;
 }
 .foggy4-right{
-	width: 42%%;
+    width: 46%;
+    height: 94%;
+    float: left;
+    position: relative;
+    padding: 5px;
+    padding-right: 4px;
+    padding-bottom:1px ;
 }
 .parentBottomleft{
+	margin: 1%;
+	height: 48%;
 	position: relative;
+	width: 98%;
+}
+.foggy4-right .parentCenterp{
+	height: 100%;
+}
+
+.foggy4-right img{
 	width: 100%;
+	object-fit: cover;
+	height: 100%;
+	height: 100%;
+	border-radius: 3px;
+}
+.foggy4 .opacityBottomright{
+	width: 99%;
+    height: 99%;
+    top: 5px;
+    left: 5px;
+    background-image: linear-gradient(to top, black, white);
+    position: absolute;
+    opacity: 0.6;
+    border-radius: 5px;
+}
+.foggy4-right .title{
+	position: absolute;
+	bottom: 0;
+}
+
+.foggy4-right .title h4{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.foggy4-right .title p{
+    color: #ccc;
+  	font-size: 13px;
+  	text-align: left;
+  	margin-left: 5px; 
+  	margin-bottom: 20px;
+}
+.foggy4 .tralve{
+	margin-left:0px;
+	font-size:13px;
+    color: white;
+    display: inline;
+    border-radius: 3px;
+    background-color: red;
+    padding: 3px;
+    top: 10px;
+    left: 10px;
+	position: absolute;
 }
 .foggy4-left img{
 	width: 100%;
+	height: 100%;
 	border-radius: 3px;
+	object-fit: cover;
 }
 .foggy4 .opacityBottomleft{
 	width: 100%;
@@ -335,8 +410,249 @@
     border-radius: 5px;
 }
 .parentItemleft{
-width: 50%;
+	position: relative;
+	width: 48%;
     float: left;
+    height: 46%;
+    margin: 1%;
+}
+.naturebottom{
+	margin-left:0px;
+	font-size:13px;
+    color: white;
+    display: inline;
+    border-radius: 3px;
+    background-color: #33CC33;
+    padding: 3px;
+    top: 5px;
+    left: 5px;
+	position: absolute;
+}
+.foggy4-left .title{
+	position: absolute;
+	bottom: 0;
+}
+
+.foggy4-left .title h4{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.foggy4-left .title p{
+    color: #ccc;
+  	font-size: 13px;
+  	text-align: left;
+  	margin-left: 5px; 
+  	margin-bottom: 20px;
+}
+.parentItemleft .lifestyle{
+	top: 5px;
+    margin-left: 5px;
+	font-size:13px;
+    color: white;
+    display: inline;
+    border-radius: 3px;
+    background-color: #FF9900;
+    padding: 3px;
+    position: absolute;
+}
+.parentItemleft .sport{
+	top: 5px;
+	left: 5px;
+	float: left;
+	font-size:13px;
+    color: white;
+    display: inline;
+    border-radius: 3px;
+    background-color: blue;
+    padding: 3px;
+    position: absolute;
+}
+
+
+/**/
+.foggy5{
+	display: none;
+	width: 100%;
+	height: 1250px;
+	background: #ccc;
+	margin-top:150px;
+	padding: 10px;
+	padding-bottom: 20px;
+	margin-bottom: 100px;
+}
+.foggy5 img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 3px;
+}
+.foggy5-parentCenterp{
+	width: 100%;
+	height: 35%;
+	position: relative;
+}
+.foggy5 .opacityBottom{
+	width: 100%;
+    height: 99%;
+    top: 5px;
+    background-image: linear-gradient(to top, black, white);
+    position: absolute;
+    opacity: 0.6;
+    border-radius: 5px;
+}
+.foggy5 .title{
+	position: absolute;
+	bottom: 0;
+}
+
+.foggy5 .title h4{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.foggy5 .title p{
+    color: #ccc;
+  	font-size: 13px;
+  	text-align: left;
+  	margin-left: 5px; 
+  	margin-bottom: 20px;
+}
+.foggy5 .tralve{
+	margin-left:0px;
+	font-size:13px;
+    color: white;
+    display: inline;
+    border-radius: 3px;
+    background-color: red;
+    padding: 3px;
+    top: 10px;
+    left: 10px;
+	position: absolute;
+}
+.foggy5-parentItem{
+	margin-top: 10px;
+	position: relative;
+	width: 100%;
+	height: 21%;
+}
+.foggy5-parentItem .sport{
+	top: 5px;
+	left: 5px;
+	float: left;
+	font-size:13px;
+    color: white;
+    display: inline;
+    border-radius: 3px;
+    background-color: blue;
+    padding: 3px;
+    position: absolute;
+}
+.foggy5 .opacityItem{
+	width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, black, white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    border-radius: 5px;
+}
+.foggy5-parentItem .lifestyle{
+	top: 5px;
+    margin-left: 5px;
+	font-size:13px;
+    color: white;
+    display: inline;
+    border-radius: 3px;
+    background-color: #FF9900;
+    padding: 3px;
+    position: absolute;
+}
+
+/**/
+.Subcribe{
+	width: 32%;
+}
+.Subcribe p{
+	margin: 10px;
+    margin-bottom: 30px;
+}
+button{
+	background-color: #3333FF;
+}
+input{
+	width: 270;
+}
+
+/**/
+.bottom{
+	margin-top: 100px;
+	width: 100%;
+	background-color: #222;
+	color: #ccc;
+	padding: 10%;
+}
+.bottom-top{
+	display: flex;
+}
+.bottom-top-left{
+	width: 30%;
+}
+.bottom-top-left h3{
+    margin-bottom: 20px;
+}
+.bottom-top-center li{
+	width: 100px;
+	list-style: none;	
+	padding: 5%;
+}
+.bottom-top-center ul{
+	padding-right: 5%;
+    float: left;
+    width: 45%;	
+}
+.bottom-top-center a{
+	color: #ccc;
+}
+.bottom-top-center{
+	width: 35%;
+	padding-left: 5%;
+}
+.bottom-top-right{
+	width: 25%;
+}
+.bottom .center{
+	width: 10%;
+}
+.center h3{
+	width: 150px;
+    margin-bottom: 20px;
+}
+.bottomend{
+	text-align: center;
+	width: 100%;
+	margin-top: 30px;
+}
+.bottomend p{
+	font-size: 18px;
+	text-align: center;
+	float: left;
+}
+.icon{
+	display: flex;
+}
+.icon i{
+	font-size: 25px;
+	margin-right: 10px;
+}
+.love{
+	color: #FF3333;
+	padding: 3px;
 }
 
 
@@ -360,6 +676,15 @@ width: 50%;
 		width: 95%;
 		margin: 2.5% 2.5%;
 		margin-top: 22px;
+	}
+	.bottom-top-center{
+		padding-left: 15%;
+	}
+	.bottom-top-center ul{
+		float: none;
+	}
+	.bottom{
+		padding-left: 5%;
 	}
 
 }
@@ -392,5 +717,25 @@ width: 50%;
 	.foggy1-parentCenter{
 		display: none;
 	}
+	.foggy4{
+		display: none;
+	}
+	.foggy5{
+		display: block;
+	}
+	.Subcribe{
+		width: 73%;
+	}
 
+	.bottomend p{
+		font-size: 18px;
+		float: left;
+	}
+
+	.bottom-top{
+		display: block;
+	}
+	.bottom-top-center ul{
+		
+	}
 }
