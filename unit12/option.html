@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#option{
+			display: flex;
+			position: relative;
+			justify-content: flex-start;
+		}
+		button{
+			border: none;
+			background-color: #ccc;
+			width: 100px;
+			height: 35px;
+		}
+		.tab .content{
+			position: absolute;
+			display: none;
+			left: 0;
+		}
+		.ative .content{
+			display: block!important;
+		}
+		.ative .btn{
+			background-color: #808080!important;
+		}
+	</style>
+</head>
+<body>
+	<div id="option">
+		<div class="tab">
+			<button class="btn">London</button>
+			<p class="content ">
+				London <br>
+				London is the capital of England
+			</p>
+		</div>
+		<div class="tab">
+			<button class="btn">Paris</button>
+			<p class="content">
+				Paris<br>
+				Paris is the capital of England
+			</p>
+		</div>
+		<div class="tab">
+			<button class="btn">Tokyo</button>
+			<p class="content">
+				Tokyo <br>
+				Tokyo is the capital of England
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var btns = document.getElementsByClassName('btn');
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener('click',function() {
+				var tab = document.getElementsByClassName('tab');
+				for (var i = 0; i < tab.length; i++) {
+					tab[i].classList.remove('ative');
+				}
+				this.parentNode.classList.add('ative');
+			})
+		}
+		
+	</script>
+</body>
+</html>
