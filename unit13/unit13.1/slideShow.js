@@ -4,7 +4,7 @@ SlideShow();
 setInterval(function() {
 	SlideIndex = SlideIndex +1;
 	SlideShow();
-},3000);
+},5000);
 
 function SlideShow() {
 	var slides = document.getElementsByClassName('slide');
