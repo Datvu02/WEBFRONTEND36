@@ -1,13 +1,15 @@
-var registration = document.getElementById('registration');
-var clear = document.getElementById('clear');
 
 function addname() {
-	if (document.getElementById('name').value.length <= 8) {
-		document.getElementById('name').nextElementSibling.classList.add('ative-errol');
+	if (document.getElementById('name').value.length == 0) {
+		document.getElementById('name').nextElementSibling.innerHTML = "Yêu cầu nhập đầy đủ họ tên!!!";
+
+		return 0;
+	}else if (document.getElementById('name').value.length < 8) {
+		document.getElementById('name').nextElementSibling.innerHTML = "Họ tên phải lớn hơn 8 ký tự";
 		return 0;
 	}
 	if (document.getElementById('name').value.length > 8) {
-		document.getElementById('name').nextElementSibling.classList.remove('ative-errol');
+		document.getElementById('name').nextElementSibling.innerHTML = "";
 		return 1;
 	}
 }
@@ -17,12 +19,15 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 function email() {
-	if (validateEmail(document.getElementById('email').value) == false) {
-		document.getElementById('email').nextElementSibling.classList.add('ative-errol');
+	if (document.getElementById('email').value.length == 0) {
+		document.getElementById('email').nextElementSibling.innerHTML = "Yêu cầu nhập email!!!";
 		return 0 ;
+	}else if (validateEmail(document.getElementById('email').value) == false) {
+		document.getElementById('email').nextElementSibling.innerHTML = "Email phải đúng dạng chuẩn!!!";
+		return 1;
 	}
 	if (validateEmail(document.getElementById('email').value) == true) {
-		document.getElementById('email').nextElementSibling.classList.remove('ative-errol');
+		document.getElementById('email').nextElementSibling.innerHTML = "";
 		return 1;
 	}
 }
@@ -37,50 +42,57 @@ function isVietnamesePhoneNumber(phonenumber) {
   }
 }
 function numberphone() {
-	if (isVietnamesePhoneNumber(document.getElementById('phone').value) == false) {
-		document.getElementById('phone').nextElementSibling.classList.add('ative-errol');
+	if (document.getElementById('phone').value.length == 0) {
+		document.getElementById('phone').nextElementSibling.innerHTML = "Yêu cầu nhập số điện thoại!!!";
+		return 0 ;
+	}else if (isVietnamesePhoneNumber(document.getElementById('phone').value) == false) {
+		document.getElementById('phone').nextElementSibling.innerHTML = "số điện thoại phải đúng dạng chuẩn!!!";
 		return 0;
 	}
 	if (isVietnamesePhoneNumber(document.getElementById('phone').value) == true) {
-		document.getElementById('phone').nextElementSibling.classList.remove('ative-errol');
+		document.getElementById('phone').nextElementSibling.innerHTML = "";
 		return 1;
 	}
 }
 
 function password() {
+
 	if (document.getElementById('pass').value.length ==0) {
-		document.getElementById('pass').nextElementSibling.classList.add('ative-errol');
+		document.getElementById('pass').nextElementSibling.innerHTML = "Yêu cầu nhập mật khẩu!!!";
 		return 0;
 	}
 	if (document.getElementById('pass').value.length > 0) {
-		document.getElementById('pass').nextElementSibling.classList.remove('ative-errol');
+		document.getElementById('pass').nextElementSibling.innerHTML = "";
 		return 1;
 	}
 }
 
 function Confirmpass() {
-	if (document.getElementById('Confirmpass').value != document.getElementById('pass').value || document.getElementById('Confirmpass').value.length==0) {
-		document.getElementById('Confirmpass').nextElementSibling.classList.add('ative-errol');
+	if (document.getElementById('Confirmpass').value.length == 0) {
+		document.getElementById('Confirmpass').nextElementSibling.innerHTML = "Yêu cầu xác nhận mật khẩu!!!";
+		return 0 ;
+	}else if (document.getElementById('Confirmpass').value != document.getElementById('pass').value || document.getElementById('Confirmpass').value.length==0) {
+		document.getElementById('Confirmpass').nextElementSibling.innerHTML = "mật khẩu không giống, yêu cầu nhập lại!!!";
 		return 0;
 	}
 	if (document.getElementById('Confirmpass').value == document.getElementById('pass').value) {
-		document.getElementById('Confirmpass').nextElementSibling.classList.remove('ative-errol');
+		document.getElementById('Confirmpass').nextElementSibling.innerHTML = "";
 		return 1;
 	}
 }
-registration.addEventListener('click',function() {
-	
-	
-	
-	
-	
-	if (addname() ==1 && email()==1 && numberphone()==1 && password()==1 && Confirmpass()==1) {
+function regis() {
+	if (addname() ==  1 && email() == 1 && numberphone()==1 && password()==1 && Confirmpass()==1) {
 		alert('Đăng ký thành công');
-	}else alert('Đăng ký không thành công')
+	}
 	
-})
-
-clear.addEventListener('click',function() {
+}
+document.getElementById('clear').addEventListener('click',function(){
+	document.getElementById('name').nextElementSibling.innerHTML = "";
+	document.getElementById('phone').nextElementSibling.innerHTML = "";
+	document.getElementById('pass').nextElementSibling.innerHTML = "";
+	document.getElementById('Confirmpass').nextElementSibling.innerHTML = "";
+	document.getElementById('email').nextElementSibling.innerHTML = "";
+	console.log('hudeug')
 	document.getElementById('name').value='';
 	var geners = document.getElementsByClassName('gener')
 	for (var i = 0; i < geners.length; i++) {
