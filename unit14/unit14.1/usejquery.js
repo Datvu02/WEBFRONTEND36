@@ -13,11 +13,11 @@ $(document).ready(function(){
 		}else {
 			var i = $('.item').length
 			if(i % 2 == 0){
-			$('#list').prepend('<div class="item dark"><i class="check fas fa-check"></i> <p id="further">' + $('#title').val() + '</p> <i class="remove fas fa-times"></i></div>');
+				$('#list').prepend('<div class="item dark"><i class="check fas fa-check"></i> <p id="further">' + $('#title').val() + '</p> <i class="remove fas fa-times"></i></div>');
 			}else{
-			$('#list').prepend('<div class="item light"><i class="check fas fa-check"></i> <p id="further">' + $('#title').val() + '</p> <i class="remove fas fa-times"></i></div>');
+				$('#list').prepend('<div class="item light"><i class="check fas fa-check"></i> <p id="further">' + $('#title').val() + '</p> <i class="remove fas fa-times"></i></div>');
 			}
-			$('#title').val('')
+			$('#title').val('');
 		}
 	})
 })

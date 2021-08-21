@@ -81,6 +81,11 @@ function Confirmpass() {
 	}
 }
 function regis() {
+	addname();
+	email()
+	numberphone()
+	password()
+	Confirmpass()
 	if (addname() ==  1 && email() == 1 && numberphone()==1 && password()==1 && Confirmpass()==1) {
 		alert('Đăng ký thành công');
 	}

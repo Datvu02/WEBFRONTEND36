@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="advanceform.css">
+</head>
+<body>
+	<div id="advance">
+		<div id="tab1" class="tab ative">
+			<div class="page ">1. Accoutn</div>
+			<div class="content" >
+				<p class="title"> Account Infomation</p>
+				<hr width="100%">
+				<div class="tabcontent">
+					<p>User name <span>*</span></p>
+					<div class="formip">
+						<input id="username" type="text" >
+						<p class="err" id="error_name"></p>
+					</div>
+				</div>
+				<div class="tabcontent">
+					<p>Password<span>*</span></p>
+					<div class="formip">
+						<input id="pas" type="password">
+						<p class="err" id="error_pas"></p>
+					</div>
+					
+				</div>
+				<div class="tabcontent">
+					<p>Confim password<span>*</span></p>
+					<div class="formip">
+						<input id="confim" type="password">
+						<p class="err" id="error_confim"></p>
+					</div>
+					
+				</div>
+				<p>(*)Mandatori</p>
+			</div>
+		</div>
+		<div id="tab2"  class="tab ">
+			<div class="page">2. Profile</div>
+			<div class="content" >
+				<p class="title"> Account Infomation</p>
+				<hr width="100%">
+				<div class="tabcontent">
+					<p>First name<span>*</span></p>
+					<div class="formip">
+						<input id="first" type="text" >
+						<p class="err" id="error_first"></p>
+					</div>
+				</div>
+				<div class="tabcontent">
+					<p>Last name <span>*</span></p>
+					<div class="formip">
+						<input id="last" type="text" >
+						<p class="err" id="error_last"></p>
+					</div>
+				</div>
+				<div class="tabcontent">
+					<p>Email<span>*</span></p>
+					<div class="formip">
+						<input id="mail" type="email" >
+						<p class="err" id="error_mail"></p>
+					</div>
+				</div>
+				<div class="tabcontent">
+					<p>Address</p>
+					<div class="formip">
+						<input id="address" type="text" >
+					</div>
+				</div>
+				<div class="tabcontent">
+					<p>Age (The warning step will show up if age is less than 18)<span>*</span></p>
+					<div class="formip">
+						<input id="age" type="Number" >
+						<p class="err" id="error_age"></p>
+					</div>
+				</div>
+				<p>(*)Mandatori</p>
+			</div>
+		</div>
+		<div id="tab3"  class="tab ">
+			<div class="page">3. Warning</div>
+			<div class="content" >
+				<p class="title"> <span>CẢNH BÁO!!</span></p>
+				<hr width="100%">
+				<span>Độ tuổi chưa phù hơp</span>
+			</div>
+		</div>
+		<div id="tab4"  class="tab">
+			<div class="page">4. Finish</div>
+			<div class ="content" >
+				<p class="title"> <span>Bạn có đồng ý với điều khoản của chúng tôi??</span></p>
+				<hr width="100%">
+				<p>Please click here if you agree to our terms <input id="check" type="checkbox"></p>
+			</div>
+		</div>
+	</div>
+	<div id="select">
+		<button id="pre">Preveus</button>
+		<button id="next">Next</button>
+		<button id="finish">Finish</button>
+	</div>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="advanceform.js"></script>
+</body>
+</html>

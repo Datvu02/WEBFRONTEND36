@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#advance{
+	display: flex;
+	position: relative;
+}
+#tab {
+
+}
+.tab .page{
+	background-color: #ccc;
+	width: 148px;
+	padding: 10px;
+	color: black;
+	border-radius: 3px;
+	margin-right: 20px;
+}
+span{
+	color: red;
+}
+input{
+	height: 30px;
+	width: 45%;
+}
+.formip{
+	display: flex;
+}
+.err{
+	margin-left: 20px;
+	color: red;
+}
+.ative .page{
+	background-color: blue !important;
+	color: white !important;
+}
+.title{
+	font-size: 30px
+}
+#check{
+	width: auto;
+	height: auto;
+}
+.content{
+	background-color: #e4e4e4;
+	margin-top: 5px;
+	padding: 20px;
+	width: 45%;
+	left: 0;
+	display: none;
+	height: 475px;
+	border-radius: 3px;
+	position: absolute;
+}
+.tabcontent{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.ative .content{
+	display: block !important;
+}
+.remove{
+	display: none;
+}
+.add{
+	display: block !important;
+}
+#select{
+	margin-left: 33%;
+	margin-top: 490px;
+	bottom: 0;
+}
+#pre{
+	float: left;
+}
+#finish{
+	display: none;
+	float: left;
+}
+button{
+	padding: 5px;
+	font-size: 18px;
+	margin-left: 20px;
+	color: white;
+	background-color: blue; 
+	cursor: pointer;
+}
