@@ -1,44 +1,44 @@
 $(document).ready(function(){
+	
 	var stemp = 1; 
+	$('#username').on('blur',function(){
+		if ($('#username').val()== '') {
+			$('#error_name').text('Vui lòng nhập tên');
+		}else if ($('#username').val().length < 8)  {
+			$('#error_name').text('Tên phải lớn hơn 8 ký tự');
+		}else {
+			$('#error_name').text('');
+		}
+	})
 	function checkform1(){
 		var check =true;
-		
-		$('#username').blur(function(){
-			if ($('#username').val()== '') {
-				$('#error_name').text('Vui lòng nhập tên');
-				 check =false;
-			}else if ($('#username').val().length < 8)  {
-				 check =false;
-				$('#error_name').text('Tên phải lớn hơn 8 ký tự');
-			}else {
-				$('#error_name').text('');
-			}
-		})
-
-		function pas() {
-			if ($('#pas').val() == '') {
-				 check =false;
-				$('#error_pas').text('Vui lòng nhập mật khẩu');
-			}else if ($('#pas').val().length < 6)  {
-				 check =false;
-				$('#error_pas').text('Mật khẩu phải lớn hơn 6 ký tự');
-			}else {
-				$('#error_pas').text('');
-			}
+		if ($('#username').val()== '') {
+			$('#error_name').text('Vui lòng nhập tên');
+			 check =false;
+		}else if ($('#username').val().length < 8)  {
+			 check =false;
+			$('#error_name').text('Tên phải lớn hơn 8 ký tự');
+		}else {
+			$('#error_name').text('');
 		}
-		
-		function confim() {
-			if ($('#confim').val() == '') {
-				 check =false;
-				$('#error_confim').text('Vui lòng xác nhận mật khẩu');
-			}else if ($('#confim').val() != $('#pas').val())  {
-				 check =false;
-				$('#error_confim').text('Mật khẩu không khớp');
-			}else {
-				$('#error_confim').text('');
-			}
+		if ($('#pas').val() == '') {
+			 check =false;
+			$('#error_pas').text('Vui lòng nhập mật khẩu');
+		}else if ($('#pas').val().length < 6)  {
+			 check =false;
+			$('#error_pas').text('Mật khẩu phải lớn hơn 6 ký tự');
+		}else {
+			$('#error_pas').text('');
 		}
-
+		if ($('#confim').val() == '') {
+			 check =false;
+			$('#error_confim').text('Vui lòng xác nhận mật khẩu');
+		}else if ($('#confim').val() != $('#pas').val())  {
+			 check =false;
+			$('#error_confim').text('Mật khẩu không khớp');
+		}else {
+			$('#error_confim').text('');
+		}
 		return check;
 	}
 
@@ -49,49 +49,40 @@ $(document).ready(function(){
 	}
 	function checkform2(){
 		var check =true;
-		function first() {
-			if ($('#first').val() == '') {
-				$('#error_first').text('Vui lòng nhập họ đệm');
-				 check =false;
-			}else if ($('#first').val().length < 6)  {
-				 check =false;
-				$('#error_first').text('Họ đệm phải lớn hơn 6 ký tự');
-			}else {
-				$('#error_first').text('');
-			}
+		if ($('#first').val() == '') {
+			$('#error_first').text('Vui lòng nhập họ đệm');
+			 check =false;
+		}else if ($('#first').val().length < 6)  {
+			 check =false;
+			$('#error_first').text('Họ đệm phải lớn hơn 6 ký tự');
+		}else {
+			$('#error_first').text('');
 		}
 
-		function last() {
-			if ($('#last').val() == '') {
-				$('#error_last').text('Vui lòng nhập họ đệm!!');
-				 check =false;
-			}else if ($('#last').val().length < 2)  {
-				 check =false;
-				$('#error_last').text('Họ đệm phải lớn hơn 2 ký tự!!');
-			}else {
-				$('#error_last').text('');
-			}
+		if ($('#last').val() == '') {
+			$('#error_last').text('Vui lòng nhập họ đệm!!');
+			 check =false;
+		}else if ($('#last').val().length < 2)  {
+			 check =false;
+			$('#error_last').text('Họ đệm phải lớn hơn 2 ký tự!!');
+		}else {
+			$('#error_last').text('');
 		}
 
-		function mail() {
-			if ($('#mail').val().length == '')  {
-				 check =false;
-				$('#error_mail').text('Vui lòng nhập email!!');
-			}else if (validateEmail($('#mail').val()) == false) {
-				 check =false;
-				$('#error_mail').text('Vui lòng nhập đúng định dạng email!!');
-			}else {
-				$('#error_mail').text('');
-			}
+		if ($('#mail').val().length == '')  {
+			 check =false;
+			$('#error_mail').text('Vui lòng nhập email!!');
+		}else if (validateEmail($('#mail').val()) == false) {
+			 check =false;
+			$('#error_mail').text('Vui lòng nhập đúng định dạng email!!');
+		}else {
+			$('#error_mail').text('');
 		}
 
-		function age() {
-			if ($('#age').val().length == '')  {
-				 check =false;
-				$('#error_age').text('Vui lòng nhập tuổi!!');
-			}
+		if ($('#age').val().length == '')  {
+			 check =false;
+			$('#error_age').text('Vui lòng nhập tuổi!!');
 		}
-		
 		return check;
 	}
 	$('#pre').click(function(){
