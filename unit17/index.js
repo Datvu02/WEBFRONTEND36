@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	$('.jquery').on('click',function(){
-		 $('.none').removeClass('ative');
-		 $('.jquery').removeClass('ative_jquery');
+		 $('.none').css('display' , 'none');
 		 $(this).toggleClass('ative_jquery');
 		 $(this).next().toggleClass('ative');
 		 $(this).next().toggleClass('animate__fadeInDown');
