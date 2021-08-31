@@ -1,0 +1,148 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.firt{
+	background:linear-gradient( rgba(9, 38, 94, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(img/img01.jpg) ;
+	background-size: cover;
+	height: auto;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.main{
+	width: 100%;
+    height: 70px;
+    display: flex;
+}
+.logo{
+	display: flex;
+    width: 40%;
+    justify-content: center;
+}
+.logo img{
+	width: 40px;
+    margin-right: 15px;
+}
+.logo_text{
+	color: white;
+    padding: 10px
+}
+.text1{
+	font-weight: 600;
+    font-size: 25px;
+}
+.main_menu{
+	width: 60%;
+}
+.main_menu ul{
+	display: flex;
+	float: right;
+	margin-right: 20%;
+}
+.main_menu li{
+	list-style: none;
+    line-height: 25px;
+    font-size: 16px;
+    color: white;
+    font-weight: 900;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.main_menu li:hover{
+	color: #fa5511;
+}
+.main_menu i{
+	font-size: 5px;
+    line-height: 68px;
+    color: white;
+}
+.main_menu .bars{
+	color: white;
+    font-size: 30px;
+    width: 50px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 2%;
+    text-align: center;
+    height: 37px;
+    line-height: 26px;
+    border: 3px solid white;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+}
+
+.introduce{
+	text-align: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+.introduce_title{
+	color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+.introduce_title2{
+	font-size: 50px;
+    margin: 10px;
+    font-weight: 900;
+}
+.introduce_title3{
+	font-size: 14px;
+	width: 495px;
+    margin-left: 33%;
+}
+.introduce_btn button{
+	background-color: red;
+	border: 0;
+	border-radius: 3px;
+	font-size: 30px;
+	color: white;
+	font-weight: 900;
+	padding: 10px;
+	cursor: pointer;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.application{
+	display: flex;
+	margin-left: 27%;
+}
+.application_content{
+	width: 14%;
+    text-align: center;
+    background-image: linear-gradient( 2deg , #b9b6b685, #b9b6b685);
+    border: 2px dashed #b4b3b3;
+    margin: 10px;
+    border-radius: 3px;
+}
+.application_content img{
+	width: 42%;
+}
+.title1{
+	background-color: red;
+    width: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-left: 75%;
+    margin-top: 5px;
+}
+.title2{
+	margin-bottom: 10px;
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+}

@@ -4,7 +4,6 @@ $(document).ready(function(){
 		 $(this).toggleClass('ative_jquery');
 		 $(this).next().toggleClass('ative');
 		 $(this).next().toggleClass('animate__fadeInDown');
-
 	});
 	$('#formDemo').validate({
 		rules: {
