@@ -1,40 +1,48 @@
 $(document).ready(function(){
-	// firt = 1;
-	// end = 4;
-	// setInterval(function(){
-	// 	$('.slide').removeClass('ative');
-	// 	if (firt < end) {
-	// 		for (var i = firt; i <= end; i++) {
-	// 			$('.slide').eq(i).addClass('ative');
-	// 		}
-	// 	}
-	// 	if (firt > end) {
-	// 		for (var i = firt; i <= $('.slide').length - 1; i++) {
-	// 			$('.slide').eq(i).addClass('ative');
-	// 		}
-	// 		for (var j = 0; j <= end; j++) {
-	// 			$('.slide').eq(j).addClass('ative');
-	// 		}
-	// 	}
-	// 	firt = firt + 1;
-	// 	end = end +1;
-	// 	if (end >  $('.slide').length -1 ) {
-	// 		end=0
-	// 		var node = document.getElementsByClassName('slide')[end]
-	// 		$('.start_slide')[0].append(node.cloneNode(true))
-	// 	}
-		
+	firt = 1;
+  	end = 4;
+  	var width = $(window).width();
+    if (width <= 992 && width >= 768){
+      firt = 1
+      end = 2
+    }else if (width> 320 && width < 768){
+      firt = 1
+      end = 1
+    }
 
-	// 	if (firt < 4) {
-	// 		$('.dots1').css('color' , '#265e46');
-	// 		$('.dots2').css('color' , '#ccc');
-	// 	}else 
-	// 		{
-	// 			$('.dots1').css('color' , '#ccc');
-	// 			$('.dots2').css('color' , '#265e46')
-	// 		}
-	// },3000);
+	setInterval(function(){
+		$('.slide').removeClass('ative');
+    	var node = document.getElementsByClassName('slide')[firt-1];
+    	$('.start_slide')[0].append(node.cloneNode(true))
+		for (var i = firt; i <= end; i++) {
+			$('.slide').eq(i).addClass('ative');
 
+		}
+		firt = firt + 1;
+		end = end +1;
+
+		if (firt % 8 < 5) {
+			$('.dost1').css('color' , 'red');
+			$('.dost2').css('color' , '#ccc');
+		}else if (firt % 8 < 5){
+			$('.dost1').css('color' , '#ccc');
+			$('.dost2').css('color' , 'red')
+		}
+	},3000);
+	$("#formDemo").validate({
+		rules:{
+			email: {
+				required : true,
+				email : true
+			}
+		},
+		messages: {
+			email: {
+				required : 'Vui lòng nhập Email!',
+				email : 'Email chưa đúng định dạng!'
+			}	
+		}
+	});
 	$('.add').on('click',function(){
 		$('.present').slideUp(500);
 		$('.remove').removeClass('exchange');
@@ -58,9 +66,16 @@ $(document).ready(function(){
 		$('.time').css('display' , 'block');
 	})
 	$('.time').on('click',function(){
-		// $('.bars').removeClass('animate__rotateOut');
 		$('.time').css('display','none');
 		$('.smail_menu').slideUp(500);
 		$('.bars').css('display' , 'block');
+	})
+	$('.opacity').hover(function(){
+		$(this).next().css('display' , 'none');
+		$(this).css('display' , 'none');
+	})
+	$('.opacity').mouseout(function(){
+		$(this).next().css('display' , 'block');
+		$(this).css('display' , 'block');
 	})
 })

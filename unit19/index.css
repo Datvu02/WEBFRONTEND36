@@ -399,6 +399,7 @@ display-2{
 input{
 	width: 90%;
     height: 35px;
+    color: black;
     padding-left: 10px;
 }
 .frm_btn button{
@@ -421,11 +422,71 @@ input{
 .brand img{
 	width: 100%;
 }
+.end{
+	background-color: #1a224e;
+	padding: 10%;
+	color: white;
+	padding-bottom: 20px;
+}
+.logo_end img{
+	width: 30%;
+    margin-bottom: 20px;
+}
+.number{
+	margin-top: 40px;
+    color: #50c594;
+}
+.title_list_end p{
+	font-size: 25px;
+    font-weight: 500;
+}
+.title_list_end li{
+	margin: 15px;
+    font-size: 20px;
+}
+.map{
+	position: relative;
+}
+.map button{
+	position: absolute;
+    margin-left: 35%;
+    margin-top: 25%;
+    background-color: white;
+    padding: 5px;
+    border: 0;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 1;
+}
+.conclude{
+	border-top: 0.1px solid;
+    padding-top: 15px;
+}
+.map iframe{
+	border: 0;
+    width: 100%;
+    position: relative;
+    height: 90%;
+}
+.opacity{
+	width: 92.5%;
+    height: 90%;
+    background-image: linear-gradient(to top, black, black);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    opacity: 0.6;
+}
+.error{
+	color: red;
+}
 @media screen and (max-width: 768px){
 	.Firstly_left{
 		text-align: center;
 	}
 }
+
 @media screen and (max-width: 992px){
 	.main_menu ul{
 		display: none;
