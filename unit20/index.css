@@ -11,9 +11,14 @@ body{
     padding-bottom: 10px;
     text-align: center;
     background-color: #eeeded;
+    position: fixed;
+	top: 0;	
+    z-index: 2;
+    width: 100%;
 }
 .contacts{
 	justify-content: center;
+	
 }
 .contacts i{
 	font-size: 20px;
@@ -24,12 +29,22 @@ body{
 	padding-right: 10% !important;
 	height: 80px;
     line-height: 80px;
-}
-.logo_firt img{
-	width: 100%;
+	position: fixed;
+	top: 0;
+    z-index: 3;
+    background-color: white;
+    margin-top: 46px;
 }
 .search{
 	padding-top: 2%;
+}
+.menu_min{
+	position: fixed;
+    top: 126px;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    display: none;
 }
 form{
 	background-color: #ea8093;
@@ -58,7 +73,18 @@ input{
 .bars{
 	display: none;
 }
+.times{
+	display: none;
+}
+.ative{
+	display: block !important;
+}
 .menu{
+	position: fixed;
+    top: 126px;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
 	height: 40px;
 	line-height: 40px;
 }
@@ -75,6 +101,7 @@ input{
 .total_title{
 	padding-top: 10%;
 	background-color: #93cbd3;
+	margin-top: 180px;
 	font-family: 'Fredoka One', cursive;
 	position: relative;
 }
@@ -87,7 +114,7 @@ input{
 	position: absolute;	
 }
 .bottom{
-	bottom: -1;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 30vh;
@@ -424,4 +451,8 @@ h6 span{
     input {
     	width: 77% !important;
     }
+
+	.logo_firt img{
+		width: 100%;
+	}
 }
