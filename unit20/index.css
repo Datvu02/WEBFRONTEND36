@@ -11,9 +11,9 @@ body{
     padding-bottom: 10px;
     text-align: center;
     background-color: #eeeded;
-    position: fixed;
+    position/*: fixed;
 	top: 0;	
-    z-index: 2;
+    z-index: 2;*/
     width: 100%;
 }
 .contacts{
@@ -27,22 +27,22 @@ body{
 .firt_part{
 	padding-left: 10% !important;
 	padding-right: 10% !important;
-	height: 80px;
-    line-height: 80px;
-	position: fixed;
-	top: 0;
-    z-index: 3;
-    background-color: white;
-    margin-top: 46px;
+	height: 60px;
+    line-height: 60px;
+	/*position: fixed;/**/
+	/*top: 0;/*/*
+   /* z-index: 3;
+    background-color: #eeeded;
+    margin-top: 46px;*/
 }
 .search{
-	padding-top: 2%;
+	padding-top: 10px;
 }
 .menu_min{
 	position: fixed;
-    top: 126px;
+    top: 105px;
     z-index: 1;
-    background-color: white;
+    background-color: #eeeded;
     width: 100%;
     display: none;
 }
@@ -80,10 +80,10 @@ input{
 	display: block !important;
 }
 .menu{
-	position: fixed;
-    top: 126px;
-    z-index: 1;
-    background-color: white;
+	/*position: fixed;
+    top: 105px;
+    z-index: 1;*/
+    background-color: #eeeded;
     width: 100%;
 	height: 40px;
 	line-height: 40px;
@@ -101,7 +101,7 @@ input{
 .total_title{
 	padding-top: 10%;
 	background-color: #93cbd3;
-	margin-top: 180px;
+	/*margin-top: 180px;*/
 	font-family: 'Fredoka One', cursive;
 	position: relative;
 }
@@ -374,6 +374,57 @@ h6 span{
 }
 .collection_content{
 	padding: 10px !important;
+}
+.author{
+	padding-left: 10px;
+	margin-top: 10px;
+}
+.author i{
+	font-size: 7px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.explain{
+	padding-left: 10px;
+}
+.author p{
+	color: #ccc;
+}
+.author .sp1{
+	color: #e84966;
+}
+.author .sp2{
+	color: black;
+}
+.blog_title{
+	margin-left: 20%;
+	margin-bottom: 35px;
+    margin-top: 100px;
+}
+.explain{
+	font-family: 'Fredoka One', cursive;
+
+}
+.blog_btn button{
+	background-color: #38548b;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px;
+    margin-left: 0;
+    padding-left: 20px;
+}
+.blog_content{
+	padding: 20px !important;
+	height: auto !important;
+}
+.blog_content:hover{
+	box-shadow: 0 0 20px 0px;
+}
+.blog_content img{
+	margin: 0;
+    height: 60%
 }
 @media screen and (max-width: 768px){
 	.bars{
